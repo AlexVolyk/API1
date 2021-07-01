@@ -1,0 +1,167 @@
+/* ! зробити hover на блоки 
+! й ше деякі речі чекнуть по файлах 
+! апдейтнуть вміст й може шрифти в DROPMENU там де API контент
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background-color: #e2e2de;
+    border-radius: 10px;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background:#aea59c; 
+    border-radius: 10px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:#aea59c;
+}
+
+
+
+.dropdown .dropdown-menu:last-child{
+    position: initial !important;
+    float: none  !important;
+}
+
+
+.btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+    color: black;
+}
+
+.btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+    background-color: rgb(86, 94, 100, 0.6);
+}
+
+.dropdown{
+    transition: 1s;
+    transition-property: background-color;
+}
+
+.dropdown:hover{
+    transition: 1s;
+    transition-property: background-color;
+    background-color: rgb(86, 94, 100, 0.9);
+}
+
+.show{
+    background-color:  transparent !important;
+}
+
+.header, footer{
+    background-color: #bdbfb1;
+}
+
+.header{
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: sticky;
+    box-shadow: 0px 9px 8px 6px rgb(34 60 80 / 25%);
+}
+
+.logo{
+    display: block;
+    max-width: 440px;
+}
+
+footer{
+    background-image:url('../img/aLotTororo.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 180px;
+    position: relative;
+    box-shadow: -1px -13px 8px 0px rgba(34, 60, 80, 0.3);
+}
+
+.main-container{
+    background: url('../img/main-backgrround.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover !important; 
+}
+
+.dropdown-menu{
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+.container{
+    max-width: 700px !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    justify-content: center;
+}
+
+footer > p{
+    margin: 0;
+    padding: 20px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.open >.dropdown-menu {
+    padding: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.dropdown{
+margin: 10px;
+}
+
+.dropdown-menu > p:nth-child(3){
+    font-family: 'Benne', serif;
+    font-size: 16px;
+}
+
+.dropdown > a{
+    width: 550px;
+}
+.dropdown-menu{
+    width: 550px;
+}
+.dropdown-menu{
+    background-image: url('../img/littleTororo.png');
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 216px;
+    background-repeat: no-repeat;
+}
+
+.footer-img{
+    background-image: url('../img/twoTororos.png');
+    background-size: contain;
+    width: 169px;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 54px;
+    left: 20px;
+}

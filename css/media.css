@@ -1,0 +1,44 @@
+@media(max-width: 1115px) {
+    .header{
+        background-image: none;
+    }
+}
+@media(max-width: 760px){
+    .open > .dropdown-menu{
+        position: initial;
+    }
+}
+@media(max-width: 740px){
+    .dropdown > a{
+        width: 320px !important;
+    }
+    .dropdown-menu{
+        width: 320px !important;
+    }
+}
+@media(max-width: 460px){
+    
+    .logo{
+        max-width: 240px !important;
+    }
+    .dropdown > a{
+        width: 260px !important;
+    }
+    .dropdown-menu{
+        width: 260px !important;
+    }
+    #dropdownMenuLink > i{
+        font-size: 12px;
+    }
+}
+@media(max-width: 310px){
+    .dropdown > a{
+        width: 220px !important;
+    }
+    .dropdown-menu{
+        width: 220px !important;
+    }
+    #dropdownMenuLink > i{
+        font-size: 12px;
+    }
+}
