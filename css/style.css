@@ -88,7 +88,7 @@ footer{
 }
 
 .main-container{
-    background: url('../img/main-backgrround.jpg') no-repeat center center fixed;
+    background: url('../img/main-backgrround.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
